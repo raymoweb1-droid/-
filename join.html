@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="انضم إلينا كعضو أو متطوع أو داعم في جمعية شباب ألبان للتنمية والتعاون">
+    <title>انضم إلينا — جمعية شباب ألبان للتنمية والتعاون</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="Simple Suits Store Black Logo .png" alt="شعار جمعية شباب ألبان" class="logo-img">
+                <span class="logo-text">جمعية شباب ألبان</span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="about.html" class="nav-link">عن الجمعية</a>
+                <a href="goals.html" class="nav-link">أهدافنا</a>
+                <a href="projects.html" class="nav-link">مشاريعنا</a>
+                <a href="join.html" class="nav-link active">انضم إلينا</a>
+                <a href="contact.html" class="nav-link">اتصل بنا</a>
+            </nav>
+            <a href="join.html" class="btn btn-primary nav-cta">انضم إلينا</a>
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="القائمة"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <h1>كن جزءاً من <span class="highlight">التغيير</span></h1>
+            <p>اكتشف كيف يمكنك بمساهمتك ووقتك أن تترك أثراً عميقاً في مجتمع ألبان</p>
+            <div class="breadcrumb">
+                <a href="index.html">الرئيسية</a>
+                <span>›</span>
+                <strong>انضم إلينا</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN OPTIONS / FORMS -->
+    <section class="section">
+        <div class="container">
+            <div class="join-tabs reveal">
+                <button class="join-tab active" data-target="volunteer-form"><i data-lucide="user-plus"></i>
+                    التطوع</button>
+                <button class="join-tab" data-target="member-form"><i data-lucide="id-card"></i> العضوية
+                    الانخراطية</button>
+                <button class="join-tab" data-target="donate-form"><i data-lucide="heart"></i> دعم المشاريع</button>
+            </div>
+
+            <!-- VOLUNTEER FORM -->
+            <div id="volunteer-form" class="join-form-panel active reveal">
+                <div class="join-form-card">
+                    <h3>استمارة التطوع</h3>
+                    <p class="sub">استثمر وقتك ومهاراتك في خدمة المجتمع وكسب أخوة وصداقات لا تُنسى.</p>
+                    <form id="formVolunteer">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>الاسم الكامل</label>
+                                <input type="text" class="form-control" required placeholder="أدخل اسمك الكامل">
+                            </div>
+                            <div class="form-group">
+                                <label>رقم الهاتف (واتساب)</label>
+                                <input type="tel" class="form-control" required placeholder="06XXXXXXXX">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>البريد الإلكتروني (اختياري)</label>
+                                <input type="email" class="form-control" placeholder="أدخل بريدك الإلكتروني">
+                            </div>
+                            <div class="form-group">
+                                <label>المجالات المفضلة للتطوع</label>
+                                <select class="form-control" required>
+                                    <option value="">اختر مجالاً...</option>
+                                    <option value="التعليم والدعم">التعليم والدعم المدرسي</option>
+                                    <option value="البيئة والتشجير">البيئة والتشجير</option>
+                                    <option value="التنظيم والرياضة">التنظيم والرياضة</option>
+                                    <option value="التصوير والتصميم">التصوير الرقمي والتصميم</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>نبذة عن مهاراتك</label>
+                            <textarea class="form-control"
+                                placeholder="حدثنا عن مهاراتك وكيف يمكنك مساعدتنا..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">أرسل طلب التطوع</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- MEMBER FORM -->
+            <div id="member-form" class="join-form-panel reveal">
+                <div class="join-form-card">
+                    <h3>استمارة طلب العضوية</h3>
+                    <p class="sub">احصل على بطاقة الانخراط، شارك في قرارات الجمعية واحضر الجموع العامة.</p>
+                    <form id="formMember">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>الاسم الكامل</label>
+                                <input type="text" class="form-control" required placeholder="أدخل اسمك الكامل">
+                            </div>
+                            <div class="form-group">
+                                <label>رقم البطاقة الوطنية (CIN)</label>
+                                <input type="text" class="form-control" required placeholder="رقم البطاقة الوطنية">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>المهنة / صفة المتقدم</label>
+                                <input type="text" class="form-control" required placeholder="مثال: طالب، موظف...">
+                            </div>
+                            <div class="form-group">
+                                <label>نوع المساهمة</label>
+                                <select class="form-control" required>
+                                    <option value="">اختر نوع المساهمة...</option>
+                                    <option value="ميدانية">ميدانية (عمل تطوعي)</option>
+                                    <option value="مادية">مادية (دعم مالي)</option>
+                                    <option value="فكرية">فكرية (استشارات وتخطيط)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>رقم الهاتف</label>
+                                <input type="tel" class="form-control" required placeholder="06XXXXXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label>المدينة / السكن الحالي</label>
+                                <input type="text" class="form-control" required placeholder="مكان السكن">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>تاريخ ومكان الازدياد</label>
+                            <input type="text" class="form-control" required placeholder="مثال: 01/01/2000 بتارودانت">
+                        </div>
+                        <button type="submit" class="btn btn-secondary form-submit">أرسل طلب العضوية</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- DONATE INFO -->
+            <div id="donate-form" class="join-form-panel reveal">
+                <div class="join-form-card" style="text-align:center;">
+                    <h3>دعم ومساندة المشاريع</h3>
+                    <p class="sub">تبرعك يساهم بشكل مباشر في إدخال الفرحة على الأيتام وتمويل المشاريع التنموية.</p>
+
+                    <div
+                        style="background:var(--bg-soft); border-radius:var(--radius-md); padding:30px; border:2px dashed var(--orange); margin-bottom:24px;">
+                        <p style="font-size:1.1rem; color:var(--text-dark); margin-bottom:12px;"><strong>الحساب البنكي
+                                للجمعية (RIB):</strong></p>
+                        <p style="font-size:1.5rem; letter-spacing:2px; font-family:monospace; color:var(--orange-dark); font-weight:800; cursor:pointer;"
+                            onclick="navigator.clipboard.writeText('000 000 000000000 00 0 00 00')">XX XXX XXXXXXX XX X
+                            XX XX</p>
+                        <p style="font-size:0.8rem; color:var(--text-muted); margin-top:8px;">(اضغط على الرقم للنسخ)</p>
+                        <p style="font-size:0.9rem; font-weight:700; margin-top:12px; color:var(--text-dark);">البنك:
+                            <span style="font-weight:400">التجاري وفا بنك</span>
+                        </p>
+                    </div>
+
+                    <div class="support-types"
+                        style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:16px; margin-top:24px;">
+                        <div style="background:#fff; padding:15px; border-radius:12px; border:1px solid var(--border);">
+                            <i data-lucide="package" style="color:var(--orange);"></i>
+                            <h4 style="margin:8px 0;">دعم عيني</h4>
+                            <p style="font-size:0.85rem;">نحتاج لمواد البناء (إسمنت، أنابيب)، أجهزة إلكترونية، أو أثاث
+                                مدرسي.</p>
+                        </div>
+                        <div style="background:#fff; padding:15px; border-radius:12px; border:1px solid var(--border);">
+                            <i data-lucide="utensils" style="color:var(--orange);"></i>
+                            <h4 style="margin:8px 0;">قفة رمضان</h4>
+                            <p style="font-size:0.85rem;">مساهمات غذائية للأسر المعوزة خلال المواسم والمناسبات.</p>
+                        </div>
+                        <div style="background:#fff; padding:15px; border-radius:12px; border:1px solid var(--border);">
+                            <i data-lucide="helping-hand" style="color:var(--orange);"></i>
+                            <h4 style="margin:8px 0;">شراكة</h4>
+                            <p style="font-size:0.85rem;">ندعو المؤسسات والشركات لدعم برامجنا التنموية الكبرى.</p>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/212600000000" target="_blank" class="btn btn-green form-submit"
+                        style="display:inline-flex; align-items:center; margin-top:30px;">
+                        للتنسيق والدعم العيني تواصل معنا <i data-lucide="message-circle" style="margin-right:8px;"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="Simple Suits Store Black Logo .png" alt="شعار الجمعية" class="footer-logo">
+                    <p>جمعية شباب ألبان للتنمية والتعاون — نعمل معاً لمستقبل أفضل</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook" aria-label="فيسبوك"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-facebook">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg></a>
+                        <a href="#" class="social-link instagram" aria-label="إنستغرام"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-instagram">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg></a>
+                        <a href="#" class="social-link tiktok" aria-label="تيك توك"><i data-lucide="music"></i></a>
+                        <a href="#" class="social-link whatsapp" aria-label="واتساب"><i
+                                data-lucide="message-circle"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4>روابط سريعة</h4>
+                    <a href="index.html">الرئيسية</a>
+                    <a href="about.html">عن الجمعية</a>
+                    <a href="goals.html">أهدافنا</a>
+                    <a href="projects.html">مشاريعنا</a>
+                    <a href="join.html">انضم إلينا</a>
+                    <a href="contact.html">اتصل بنا</a>
+                </div>
+                <div class="footer-links-col">
+                    <h4>خدماتنا</h4>
+                    <a href="#">التعليم والتدريب</a>
+                    <a href="#">التنمية المجتمعية</a>
+                    <a href="#">الرياضة والترفيه</a>
+                    <a href="#">دعم الفئات الهشة</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>تواصل معنا</h4>
+                    <p><i data-lucide="map-pin"></i> ألبان، إقليم تارودانت، المغرب</p>
+                    <p><i data-lucide="phone"></i> +212 6XX XXX XXX</p>
+                    <p><i data-lucide="mail"></i> contact@albane-association.ma</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 جمعية شباب ألبان للتنمية والتعاون. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Handle URL hash for Join tabs
+        document.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash) {
+                const tab = document.querySelector(`.join-tab[data-target="${hash}-form"]`);
+                if (tab) tab.click();
+            }
+        });
+    </script>
+</body>
+
+</html>
