@@ -20,7 +20,7 @@
     <header class="navbar" id="navbar">
         <div class="container navbar-inner">
             <a href="index.html" class="nav-logo">
-                <img src="Simple Suits Store Black Logo .png" alt="شعار جمعية شباب ألبان" class="logo-img">
+                <img src="assets/logo.png" alt="شعار جمعية شباب ألبان" class="logo-img">
                 <span class="logo-text">جمعية شباب ألبان</span>
             </a>
             <nav class="nav-links" id="navLinks">
@@ -44,7 +44,7 @@
             <p>اكتشف كيف يمكنك بمساهمتك ووقتك أن تترك أثراً عميقاً في مجتمع ألبان</p>
             <div class="breadcrumb">
                 <a href="index.html">الرئيسية</a>
-                <span>›</span>
+                <span aria-hidden="true">›</span>
                 <strong>انضم إلينا</strong>
             </div>
         </div>
@@ -163,10 +163,7 @@
                         style="background:var(--bg-soft); border-radius:var(--radius-md); padding:30px; border:2px dashed var(--orange); margin-bottom:24px;">
                         <p style="font-size:1.1rem; color:var(--text-dark); margin-bottom:12px;"><strong>الحساب البنكي
                                 للجمعية (RIB):</strong></p>
-                        <p style="font-size:1.5rem; letter-spacing:2px; font-family:monospace; color:var(--orange-dark); font-weight:800; cursor:pointer;"
-                            onclick="navigator.clipboard.writeText('000 000 000000000 00 0 00 00')">XX XXX XXXXXXX XX X
-                            XX XX</p>
-                        <p style="font-size:0.8rem; color:var(--text-muted); margin-top:8px;">(اضغط على الرقم للنسخ)</p>
+                        <p style="font-size:1rem; color:var(--text-body); font-weight:700;">يرجى التواصل مع الجمعية للحصول على معلومات الدعم البنكي الرسمية.</p>
                         <p style="font-size:0.9rem; font-weight:700; margin-top:12px; color:var(--text-dark);">البنك:
                             <span style="font-weight:400">التجاري وفا بنك</span>
                         </p>
@@ -192,7 +189,7 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/212600000000" target="_blank" class="btn btn-green form-submit"
+                    <a href="https://wa.me/212600000000" target="_blank" rel="noopener" class="btn btn-green form-submit"
                         style="display:inline-flex; align-items:center; margin-top:30px;">
                         للتنسيق والدعم العيني تواصل معنا <i data-lucide="message-circle" style="margin-right:8px;"></i>
                     </a>
@@ -207,16 +204,16 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="Simple Suits Store Black Logo .png" alt="شعار الجمعية" class="footer-logo">
+                    <img src="assets/logo.png" alt="شعار الجمعية" class="footer-logo" loading="lazy">
                     <p>جمعية شباب ألبان للتنمية والتعاون — نعمل معاً لمستقبل أفضل</p>
                     <div class="social-links">
-                        <a href="#" class="social-link facebook" aria-label="فيسبوك"><svg
+                        <a href="contact.html" class="social-link facebook" aria-label="فيسبوك"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-facebook">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                             </svg></a>
-                        <a href="#" class="social-link instagram" aria-label="إنستغرام"><svg
+                        <a href="contact.html" class="social-link instagram" aria-label="إنستغرام"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-instagram">
@@ -224,8 +221,8 @@
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                             </svg></a>
-                        <a href="#" class="social-link tiktok" aria-label="تيك توك"><i data-lucide="music"></i></a>
-                        <a href="#" class="social-link whatsapp" aria-label="واتساب"><i
+                        <a href="contact.html" class="social-link tiktok" aria-label="تيك توك"><i data-lucide="music"></i></a>
+                        <a href="https://wa.me/212600000000" target="_blank" rel="noopener" class="social-link whatsapp" aria-label="واتساب"><i
                                 data-lucide="message-circle"></i></a>
                     </div>
                 </div>
@@ -240,35 +237,26 @@
                 </div>
                 <div class="footer-links-col">
                     <h4>خدماتنا</h4>
-                    <a href="#">التعليم والتدريب</a>
-                    <a href="#">التنمية المجتمعية</a>
-                    <a href="#">الرياضة والترفيه</a>
-                    <a href="#">دعم الفئات الهشة</a>
+                    <a href="goals.html">التعليم والتدريب</a>
+                    <a href="goals.html">التنمية المجتمعية</a>
+                    <a href="goals.html">الرياضة والترفيه</a>
+                    <a href="goals.html">دعم الفئات الهشة</a>
                 </div>
                 <div class="footer-contact">
                     <h4>تواصل معنا</h4>
                     <p><i data-lucide="map-pin"></i> ألبان، إقليم تارودانت، المغرب</p>
-                    <p><i data-lucide="phone"></i> +212 6XX XXX XXX</p>
-                    <p><i data-lucide="mail"></i> contact@albane-association.ma</p>
+                    <p><a class="footer-contact-link" href="tel:+212600000000"><i data-lucide="phone"></i> <span dir="ltr">+212 600 000 000</span></a></p>
+                    <p><a class="footer-contact-link" href="mailto:contact@albane-association.ma"><i data-lucide="mail"></i> <span dir="ltr">contact@albane-association.ma</span></a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 جمعية شباب ألبان للتنمية والتعاون. جميع الحقوق محفوظة.</p>
+                <p>© 2026 جمعية شباب ألبان للتنمية والتعاون. جميع الحقوق محفوظة.</p>
             </div>
         </div>
     </footer>
 
-    <script src="main.js"></script>
-    <script>
-        // Handle URL hash for Join tabs
-        document.addEventListener('DOMContentLoaded', () => {
-            const hash = window.location.hash.replace('#', '');
-            if (hash) {
-                const tab = document.querySelector(`.join-tab[data-target="${hash}-form"]`);
-                if (tab) tab.click();
-            }
-        });
-    </script>
+    <script src="admin-site.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
